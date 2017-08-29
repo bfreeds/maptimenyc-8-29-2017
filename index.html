@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>MaptimeNYC 12-28-16</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/maptimenyc.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="text-black" data-background="./assets/maptimenyc.jpg">
+					<blockquote cite='Maptime.io'>Maptime is an open learning environment for all levels and degrees of knowledge, offering intentional educational support for the beginner. Maptime is simultaneously flexible and structured, creating space for mapping tutorials, workshops, ongoing projects with a shared goal, and independent/collaborative work time. Beginners most welcome!</blockquote>
+					<h6>#MaptimeNYC</h6>
+				</section>
+
+				<section class="text-black">
+					<h3>Upcoming Mappenings</h3>
+					<table>
+						<tr>
+							<th><a href="https://goo.gl/WA2N32">BetaNYC 311 Datajam</a></th>
+							<th>September 23rd</th>
+							<th>NYC (See URL for Exact Location)</th>
+						</tr>
+						<tr>
+							<th><a href="http://go.carto.com/carto-community-bash-nyc">Carto Community Bash</a></th>
+							<th>September 29th</th>
+							<th>This Building (Carto's BK Office)</th>
+						</tr>
+						<tr>
+							<th><a href="http://nacis.org/annual-meeting/current-meeting/">NACIS (Cartography) Conference</a></th>
+							<th>October 10th-13th</th>
+							<th>Montreal, Canada</th>
+						</tr>
+						<tr>
+							<th><a href="https://2017.stateofthemap.us/">State of the Map US Annual Conference</a></th>
+							<th>October 20th-23rd</th>
+							<th>Boulder, Colorado</th>
+						</tr>
+
+					</table>
+				</section>
+				<!-- Credits Slide -->
+				<section>
+					<p>Thank you Carto for hosting & pizza!</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+
+			// Slide every five seconds
+			Reveal.configure({
+			  autoSlide: 15000,
+				loop: true
+			});
+		</script>
+	</body>
+</html>
